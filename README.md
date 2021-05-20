@@ -53,5 +53,17 @@ Operable program or batch file.
 If your version of Python is missing Pip, see our article How to Install Pip to Manage Python Packages on Windows.If your version of Python is missing Pip, see our article How to Install Pip to Manage Python Packages on Windows.
 https://phoenixnap.com/kb/install-pip-windows
 
+Download the dependencies with the terminal or cmd:
+1.Install tk
+![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-54-25.png?raw=true)<br />
+2.Install requests
+![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-58-53.png?raw=true)<br />
 
-
+Then download the zip folder 
+To excute:
+1.Cd to the folder:
+![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-59-54.png?raw=true)<br />
+2.Run the file:
+![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-59-42.png?raw=true)<br />
+3.Woila you have your app running.
+![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/2021-05-20%2019-12-44.gif?raw=true)<br />
