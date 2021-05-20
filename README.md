@@ -56,14 +56,14 @@ https://phoenixnap.com/kb/install-pip-windows
 Download the dependencies with the terminal or cmd:
 1.Install tk
 ![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-54-25.png?raw=true)<br />
-2.Install requests
+2.Install requests<br/>
 ![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-58-53.png?raw=true)<br />
 
-Then download the zip folder 
-To excute:
-1.Cd to the folder:
+Then download the zip folder <br/>
+To excute:<br/>
+1.Cd to the folder:<br/>
 ![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-59-54.png?raw=true)<br />
-2.Run the file:
+2.Run the file:<br/>
 ![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/Screenshot%20from%202021-05-20%2018-59-42.png?raw=true)<br />
-3.Woila you have your app running.
+3.Woila you have your app running.<br/>
 ![alt text](https://github.com/aman22032007/COVIDGUI/blob/main/2021-05-20%2019-12-44.gif?raw=true)<br />
