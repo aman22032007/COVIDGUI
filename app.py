@@ -1,12 +1,7 @@
-import os
-
-import img as img
-
 import main
 import tkinter
 import countrylist
 from tkinter.messagebox import showinfo
-from PIL import Image, ImageTk
 from tkinter import font
 from tkinter import *
 
