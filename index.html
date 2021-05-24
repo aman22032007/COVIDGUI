@@ -1,0 +1,58 @@
+<!-- saved from url=(0266)https://mp4-a.udemycdn.com/2016-11-10_08-55-57-3b4ea98e124ae6c99c5f29d926bb3aa8/original.html?ZLsCi1A1vDSnCOe9C_UvXsir4KZ7LLNA7sM4pp-Y82isEsRxQaOsf7o51aiZbMej98ZoA3fyDq28lZBrRnTIsHLWyBNaYroKY3GoF3y04PlnNXC8ZfECnqbRwerXtrdcingfXkuCl6pQ9rNEokg3tDlMY5CjA3IZ2poXx6-NvgAp -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <script type="text/javascript">
+        let cases
+        let cases_arr
+        let cases_arr_keys = []
+        let cases_arr_values = []
+        let dictionary = {}
+
+        function httpGetAsync(theUrl, callback) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                    callback(xmlHttp.responseText);
+            }
+            xmlHttp.open("GET", theUrl, true); // true for asynchronous
+            xmlHttp.send(null);
+        }
+
+        httpGetAsync('https://api.covid19api.com/world/total', function (response) {
+            cases = response;
+            console.log(cases)
+            cases_arr = cases.split(',')
+            console.log(cases_arr)
+            cases_arr[0] = cases_arr[0].replace('{', '')
+            cases_arr[2] = cases_arr[2].replace('}', '')
+            console.log(cases_arr)
+            cases_arr[0] = cases_arr[0].replace('"', '')
+            cases_arr[1] = cases_arr[1].replace('"', '')
+            cases_arr[2] = cases_arr[2].replace('"', '')
+            cases_arr[0] = cases_arr[0].replace('\"', '')
+            cases_arr[1] = cases_arr[1].replace('\"', '')
+            cases_arr[2] = cases_arr[2].replace('\"', '')
+            cases_arr[2] = cases_arr[2].replace('\n', '')
+            console.log(cases_arr)
+            for (i = 0; i < cases_arr.length; i++) {
+                let the_list = cases_arr[i].split(':')
+                cases_arr_keys.push(the_list[0])
+                cases_arr_values.push(the_list[1])
+                dictionary[the_list[0]]=the_list[1]
+            }
+            console.log(cases_arr_keys)
+            console.log(cases_arr_values)
+            console.log(dictionary)
+        })
+    </script>
+</head>
+<body>
+
+<div id="myElement">
+    Hello, world!
+</div>
+
+
+</body>
+</html>
